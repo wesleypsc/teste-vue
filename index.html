@@ -5,8 +5,81 @@
     <link rel="icon" type="image/svg+xml" href="/faviconVitascience.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitascience - Funil VueJS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <link rel="dns-prefetch" href="https://code.jquery.com">
+
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </noscript>
+
+    <script>
+        // Load jQuery only if not already loaded
+        if (!window.jQuery) {
+            const jqueryScript = document.createElement('script');
+            jqueryScript.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
+            jqueryScript.integrity = 'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=';
+            jqueryScript.crossOrigin = 'anonymous';
+            jqueryScript.defer = true;
+            document.head.appendChild(jqueryScript);
+        }
+    </script>
+
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5KWVV4P');</script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WM23RHTSK7');
+  </script>
+
+  <script type="text/javascript">
+      (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+      vgo('setAccount', '799048951');
+      vgo('setTrackByDefault', true);
+
+      vgo('process');
+  </script> 
+
+  <script>
+      ! function(i, n) {
+          i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now())
+      }(window, performance);
+  </script>
+  <link rel="preload"
+      href="https://scripts.converteai.net/f527eed6-597a-4c52-86e2-410d7948d86b/players/6893bc8a51bd174921af79d7/v4/player.js"
+      as="script">
+  <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+  <link rel="preload"
+      href="https://cdn.converteai.net/f527eed6-597a-4c52-86e2-410d7948d86b/67fe92999a08c5ba8cbd2271/main.m3u8"
+      as="fetch">
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    
+
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KWVV4P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
