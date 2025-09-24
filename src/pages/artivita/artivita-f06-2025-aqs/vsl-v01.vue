@@ -1,8 +1,11 @@
+<script setup>
+  import ScriptsFooter from '../../../components/ScriptsFooter.vue'
+
+  var tmin = 26;  // minutos
+  var tseg = 29;  // segundos
+</script>
+
 <template>
-  
-  
-  <!-- Script RedTrack VSL -->
-  <!-- <script type="text/javascript" src="https://trk.vita-science.com/track.js"></script> -->
 
 <component :is="'script'" defer src="https://trk.vita-science.com/track.js"></component>
   
@@ -20,19 +23,19 @@
             </div>
         </div>
 
-        <a href="#ofertas" class="ocultar rounded-[20px] text-center bg-gradient-to-b from-[#08AB18] to-[#00D918] text-white text-[1.2em] md:text-2xl font-bold p-3 md:p-6 block my-[1em] md:mx-auto md:max-w-2xl">QUERO ELIMINAR 80% AS DORES</a>
+        <a href="#ofertas" class="ocultar rounded-[20px] text-center bg-gradient-to-b from-[#08AB18] to-[#00D918] text-white text-[1.2em] md:text-2xl font-bold p-3 md:p-6 block my-[1em] md:mx-auto md:max-w-2xl ocultar">QUERO ELIMINAR 80% AS DORES</a>
 
     </div>
 </header>
 
 
-<section id="ofertas" class="pt-20 pb-[220px]">   
+<section id="ofertas" class="pt-20 pb-[220px] px-[20px] ocultar">   
   <div class="container mx-auto px-0 max-w-7xl flex flex-col md:flex-row gap-[20px] flex-wrap items-start justify-center">
-    <p class="text-center w-full text-2xl">CONDIÇÃO <span class="text-[var(--product-primary-color)]"><b>EXCLUSIVA</b></span> PARA ESTA PÁGINA</p>
+    <p class="text-center w-full md:text-2xl">CONDIÇÃO <span class="text-[var(--product-primary-color)]"><b>EXCLUSIVA</b></span> PARA ESTA PÁGINA</p>
     
-    <p class="text-center w-full text-4xl font-bold text-[var(--product-primary-color)] my-[-10px]">Escolha o melhor protocolo para você</p>
+    <p class="text-center w-full text-3xl md:text-4xl font-bold text-[var(--product-primary-color)] my-[-10px]">Escolha o melhor protocolo para você</p>
 
-    <p class="text-center w-full text-2xl mb-10">1 pote = 1 mês de protocolo</p>
+    <p class="text-center w-full md:text-2xl mb-10">1 pote = 1 mês de protocolo</p>
 
               
     <div class="price-card bg-gradient-to-b from-white to-gray-200 p-0 text-center rounded-[20px] overflow-hidden shadow-2xl md:w-[25%] flex-grow">
@@ -64,14 +67,14 @@
 
 
             <div class="preco flex items-center justify-center font-extrabold leading-none my-4">
-                <span class="text-[9vw] md:text-[4em]">R$ 38,82</span>
+                <span class="text-[16vw] md:text-[4em]">R$ 38,82</span>
             </div>
 
             <p class="text-xl font-bold uppercase">Ou R$ 375,30 à vista</p>
 
             
 
-            <a href="https://trk.vita-science.com/click/1" class="rounded-full bg-[#03C032] hover:bg-[#02a129] text-white text-3xl font-bold py-5 block my-[1em] mx-auto">COMPRAR AGORA</a>
+            <a href="https://trk.vita-science.com/click/2" class="rounded-full bg-[#03C032] hover:bg-[#02a129] text-white text-3xl font-bold py-5 block my-[1em] mx-auto">COMPRAR AGORA</a>
 
             <p class="uppercase font-bold">
                 <span class="text-green-700">FRETE GRÁTIS</span>
@@ -118,14 +121,14 @@
 
 
             <div class="preco flex items-center justify-center font-extrabold leading-none my-4">
-                <span class="text-[9vw] md:text-[4em]">R$ 69,0</span>
+                <span class="text-[16vw] md:text-[4em]">R$ 69,00</span>
             </div>
 
             <p class="text-xl font-bold uppercase">Ou R$ 667,20 à vista</p>
 
             
 
-            <a href="https://trk.vita-science.com/click/1" class="rounded-full bg-[#03C032] hover:bg-[#02a129] text-white text-3xl font-bold py-5 block my-[1em] mx-auto">COMPRAR AGORA</a>
+            <a href="https://trk.vita-science.com/click/3" class="rounded-full bg-[#03C032] hover:bg-[#02a129] text-white text-3xl font-bold py-5 block my-[1em] mx-auto">COMPRAR AGORA</a>
 
             <p class="uppercase font-bold">
                 <span class="text-yellow-400">FRETE GRÁTIS</span>
@@ -156,7 +159,7 @@
 
 
             <div class="preco flex items-center justify-center font-extrabold leading-none my-4">
-                <span class="text-[9vw] md:text-[4em]">R$ 14,38</span>
+                <span class="text-[16vw] md:text-[4em]">R$ 14,38</span>
             </div>
 
             <p class="text-xl font-bold uppercase">Ou R$ 139,00 à vista</p>
@@ -176,108 +179,89 @@
 </section>
 
 
-<section id="garantia" class="pt-5 pb-30 bg-gray-100">
+<section id="garantia" class="pt-5 pb-30 bg-gray-100 px-[20px] ocultar">
   <div class="container mx-auto px-0 max-w-4xl flex flex-col gap-[20px] flex-wrap items-center justify-center text-center">
     
     <img src="/seloGarantiaGlicoF06.webp" alt="" class="w-[230px] mt-[-120px]">
 
-    <p class="text-2xl">Foram décadas de pesquisa e testes para chegar na melhor combinação de componentes do <b>Artivita.</b></p>
+    <p class="text-xl md:text-2xl">Foram décadas de pesquisa e testes para chegar na melhor combinação de componentes do <b>Artivita.</b></p>
 
-    <p class="text-2xl">É por isso que confiamos que você irá amar os benefícios:</p>
+    <p class="text-xl md:text-2xl">É por isso que confiamos que você irá amar os benefícios:</p>
 
     <ul class="font-bold text-left list-none text-xl flex flex-col gap-3">
       <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7 inline-block text-[#03C032]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
           <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
         </svg>
 
-        Eliminar a dor sem remédios;
+        <span class="w-[35%] flex-grow">Eliminar a dor sem remédios;</span>
       </li>
 
       <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7 inline-block text-[#03C032]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
           <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
         </svg>
 
-        Recuperar a força das articulações;
+        <span class="w-[35%] flex-grow">Recuperar a força das articulações;</span>
       </li>
 
       <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7 inline-block text-[#03C032]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
           <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
         </svg>
 
-        Irrigar e regenerar a cartilagem danificada;
+        <span class="w-[35%] flex-grow">Irrigar e regenerar a cartilagem danificada;</span>
       </li>
 
       <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7 inline-block text-[#03C032]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
           <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
         </svg>
 
-        Impedir que as articulações fiquem fracas.
+        <span class="w-[35%] flex-grow">Impedir que as articulações fiquem fracas.</span>
       </li>
     </ul>
 
-    <p class="text-2xl">Mas, se você se arrepender por qualquer motivo que seja dentro de sete dias da sua compra, <b>devolveremos todo o seu investimento.</b></p>
+    <p class="text-xl md:text-2xl">Mas, se você se arrepender por qualquer motivo que seja dentro de sete dias da sua compra, <b>devolveremos todo o seu investimento.</b></p>
 
-    <p class="text-2xl">Basta enviar uma mensagem para: <span class="text-pink-600">(11) 4003-7811.</span></p>
+    <p class="text-xl md:text-2xl">Basta enviar uma mensagem para: <span class="text-pink-600">(11) 4003-7811.</span></p>
 
   </div>
 </section>
 
-<section id="dayan" class="py-30">
-  <div class="container mx-auto px-0 max-w-4xl flex flex-row gap-[20px] items-center justify-center ">
+<section id="dayan" class="py-30 px-[20px] ocultar">
+  <div class="container mx-auto px-0 max-w-4xl flex flex-col md:flex-row gap-[20px] items-center justify-center text-center md:text-left">
     <img src="/drDayanSiebra_Sobre.webp" alt="" class="md:w-[275px]">
 
     <div>
-      <p class="text-xl mb-4">Formado pela Universidade de Pernambuco, possui mais de <b>25 anos</b> de prática na área da saúde.</p>
+      <p class="text-lg md:text-xl mb-4">Formado pela Universidade de Pernambuco, possui mais de <b>25 anos</b> de prática na área da saúde.</p>
 
-      <p class="text-xl mb-4">É o criador do maior canal de medicina na língua portuguesa do <b>mundo</b>, com mais de 7 milhões de inscritos.</p>
+      <p class="text-lg md:text-xl mb-4">É o criador do maior canal de medicina na língua portuguesa do <b>mundo</b>, com mais de 7 milhões de inscritos.</p>
 
-      <p class="text-xl mb-4">Além disso, é precursor e um dos maiores especialistas em medicina integrativa e natural no Brasil, <b>e já ajudou mais de 35 mil pessoas a viverem com mais saúde, sem esquecimentos</b></p>
+      <p class="text-lg md:text-xl mb-4">Além disso, é precursor e um dos maiores especialistas em medicina integrativa e natural no Brasil, <b>e já ajudou mais de 35 mil pessoas a viverem com mais saúde, sem esquecimentos</b></p>
     </div>
   </div>
 </section>
 
-<section class="bg-gray-50 py-14 px-4">
-    <div class="container mx-auto max-w-6xl">
+<section class="bg-gray-50 py-14 px-[20px] ocultar">
+    <div class="container mx-auto max-w-6xl flex flex-col md:flex-row justify-between gap-10 md:gap-20 text-center md:text-left">
 
-        
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-
+        <div class="formas-pagto md:w-[25%] flex-grow">
+            <h3 class="text-xl font-bold">Formas de Pagamento</h3>
             
-            <div class="lg:col-span-1">
-                
-                <div class="flex flex-wrap justify-center lg:justify-start items-center gap-3 mb-4">
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/visa-1.svg" alt="Visa"
-                        class="h-8 w-auto" width="52" height="35">
-
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/master-1.svg" alt="Mastercard"
-                        class="h-8 w-auto" width="52" height="35">
-
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/dinner.svg" alt="Diners"
-                        class="h-8 w-auto" width="52" height="35">
-
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/boleto.svg" alt="Boleto"
-                        class="h-8 w-auto" width="52" height="35">
-
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/pix.svg" alt="PIX"
-                        class="h-8 w-auto" width="53" height="35">
-                </div>
-
-                
-                <p class="text-center lg:text-left text-sm font-semibold text-gray-700 leading-relaxed">
-                    PAGUE EM ATÉ 6X SEM JUROS NO CARTÃO OU À VISTA COM DESCONTO
-                </p>
-            </div>
-
+            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
             
-            <div class="lg:col-span-1 text-center">
-                <p class="text-gray-600 mb-3">Fale conosco aqui:</p>
+            <img src="/formas_pagto.svg" class="w-[100%]" alt="">
+        </div>
 
-                <a href="https://lp.vita-science.com/9x3t?"
-                    class="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+        <div class="duvidas md:w-[25%] flex-grow">
+            <h3 class="text-xl font-bold">Dúvidas</h3>
+            
+            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
+            
+            <p>Fale conosco aqui:</p>
+
+            <a href="https://lp.vita-science.com/9x3t?" class="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-10 rounded-[5px] transition-colors duration-300 mt-2">
                     
                     <svg class="w-5 h-5" viewBox="0 0 448 512" fill="currentColor">
                         <path
@@ -286,50 +270,108 @@
                     </svg>
                     <span>Tire suas dúvidas</span>
                 </a>
-            </div>
-
             
-            <div class="lg:col-span-1">
-                <div class="flex flex-wrap justify-center lg:justify-end items-center gap-4">
-                    
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/Item-→-SVG.svg"
-                        alt="SSL Certificate" class="h-10 w-auto" width="70" height="41">
-
-                    
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/google.svg" alt="Google"
-                        class="h-8 w-auto" width="89" height="33">
-
-                    
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/review.webp" alt="Reviews"
-                        class="h-12 w-auto" width="349" height="129"
-                        srcset="https://fn.vita-science.com/wp-content/uploads/2025/08/review.webp 349w, https://fn.vita-science.com/wp-content/uploads/2025/08/review-300x111.webp 300w"
-                        sizes="(max-width: 349px) 100vw, 349px">
-
-                    
-                    <img src="https://fn.vita-science.com/wp-content/uploads/2025/08/ra.svg" alt="RA Certificate"
-                        class="h-12 w-auto" width="81" height="85">
-                </div>
+        </div>
+        
+        <div class="formas-pagto md:w-[25%] flex-grow">
+            <h3 class="text-xl font-bold">Site Seguro</h3>
+            
+            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
+            
+            <div class="flex flex-row flex-wrap justify-between gap-2">
+              <img src="/Reclame-aqui.jpg" class="w-[35%] flex-grow" alt="">
+              <img src="/Google.jpg" class="w-[35%] flex-grow" alt="">
+              <img src="/Site-seguro.jpg" class="w-[35%] flex-grow" alt="">
+              <img src="/Compra-segura.jpg" class="w-[35%] flex-grow" alt="">
             </div>
-
         </div>
 
     </div>
 </section>
 
 
-<footer class="bg-white py-20 flex items-center justify-center px-5">
-    <div class="container mx-auto max-w-5xl text-center">
-        <img src="" alt="" class="mx-auto max-w-2xl">
+<footer class="bg-white py-20 flex items-center justify-center px-[20px]">
+    <div class="container mx-auto max-w-6xl text-center">
+        <img src="/vita-logo-dark.svg" alt="" class="mx-auto w-[150px] mb-5">
         
-        <p class="text-gray-700 mb-6">Caro consumidor e usuário: As informações dispostas neste site e em qualquer site da empresa - Vitascience Ltda, inscrita no CNPJ 32.985.885/0001-11, são publicadas exclusivamente para fins informativos e não podem ser consideradas como aconselhamento profissional. Logo, as informações aqui contidas, não substituem uma consulta com um profissional. O conteúdo aqui disposto possui caráter informativo e esta aberto ao público.</p>
+        <p class="text-gray-700 mb-6 text-sm">Caro consumidor e usuário: As informações dispostas neste site e em qualquer site da empresa - Vitascience Ltda, inscrita no CNPJ 32.985.885/0001-11, são publicadas exclusivamente para fins informativos e não podem ser consideradas como aconselhamento profissional. Logo, as informações aqui contidas, não substituem uma consulta com um profissional. O conteúdo aqui disposto possui caráter informativo e esta aberto ao público.</p>
 
         <div class="flex justify-center items-center gap-20">
-            <a href="https://lp.vita-science.com/politica-de-privacidade/" class="text-purple-800 hover:text-purple-600" target="_self"><small>Política de privacidade</small></a>
-            <a href="https://lp.vita-science.com/termos-de-uso/" class="text-purple-800 hover:text-purple-600" target="_self"><small>Termos de Uso</small></a>
+            <a href="https://lp.vita-science.com/politica-de-privacidade/" class="text-gray-500 hover:text-gray-600" target="_self"><small>Política de privacidade</small></a>
+            <a href="https://lp.vita-science.com/termos-de-uso/" class="text-gray-500 hover:text-gray-600" target="_self"><small>Termos de Uso</small></a>
         </div>
     </div>
 
 </footer>
+
+
+<component :is="'script'">
+
+  var list = document.getElementsByClassName('ocultar');
+  for (var i = 0; i < list.length; i++) {
+      list[i].style.visibility = 'hidden';
+      list[i].style.display = 'none';
+  }
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+
+let userViewPitch = getCookie("viewPitch");
+
+  if (userViewPitch == 1) {
+    
+    var list = document.getElementsByClassName('ocultar');
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.visibility = 'visible';
+            list[i].style.display = 'block';
+        }
+  }
+  
+// AQUI VOCÊ DEFINE O TEMPO EM MINUTOS E SEGUNDOS 
+// (nao precisa converter, todos os calculas sao feitos pela da função) 
+
+    var tmin = 26;  // minutos
+    var tseg = 29;  // segundos
+    
+//********************************************
+
+    var tpitch = (tmin * 60000) + (tseg * 1000);
+    setTimeout('show()', tpitch);
+    console.log('pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
+    
+    function show(){
+        var list = document.getElementsByClassName('ocultar');
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.visibility = 'visible';
+            list[i].style.display = 'block';
+        }
+        
+        setCookie("viewPitch", 1, 1);
+    }
+  
+</component>
+
+<ScriptsFooter/>
 
 </template>
 
