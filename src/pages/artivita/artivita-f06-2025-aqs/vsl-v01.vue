@@ -3,6 +3,8 @@
   
   <!-- Script RedTrack VSL -->
   <!-- <script type="text/javascript" src="https://trk.vita-science.com/track.js"></script> -->
+
+<component :is="'script'" src="https://trk.vita-science.com/track.js"></component>
   
 
 
@@ -13,7 +15,8 @@
         <div class="relative aspect-video bg-black rounded-lg shadow-lg mb-8">
             <div class="absolute inset-0 flex items-center justify-center">
                 <vturb-smartplayer id="vid-68c48ca9d64e18967f73db3d" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
-                <!-- <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4e7b019-0b6b-4a9d-8b7f-8e044b2d1301/players/68c48ca9d64e18967f73db3d/v4/player.js", s.async=!0,document.head.appendChild(s); </script> -->
+                <component :is="'script'"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4e7b019-0b6b-4a9d-8b7f-8e044b2d1301/players/68c48ca9d64e18967f73db3d/v4/player.js", s.async=!0,document.head.appendChild(s); </component>
+                 <!-- <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4e7b019-0b6b-4a9d-8b7f-8e044b2d1301/players/68c48ca9d64e18967f73db3d/v4/player.js", s.async=!0,document.head.appendChild(s); </script> -->
             </div>
         </div>
 
