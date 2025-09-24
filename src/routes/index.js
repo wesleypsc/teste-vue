@@ -7,7 +7,7 @@ import ArtivitaF06_VSL_v01 from '../pages/artivita/artivita-f06-2025-aqs/vsl-v01
 const routes = [
     {
         path: '/', 
-        component: HelloWorld
+        component: Home
     },
     {
         path: '/artivita/artivita-f06-2025-aqs/vsl-v01',
