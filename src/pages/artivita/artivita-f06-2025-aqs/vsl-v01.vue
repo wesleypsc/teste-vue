@@ -1,15 +1,17 @@
 <script setup>
   import ScriptsFooter from '../../../components/ScriptsFooter.vue'
-
-  var tmin = 26;  // minutos
-  var tseg = 29;  // segundos
+  import ScriptRedtrackVSL from '../../../components/ScriptRedtrackVSL.vue'
+  // import LiberaVSL from '../../../components/LiberaVSL.vue'
+  
+  import Garantia from '../../../components/GarantiaArtiF06.vue'
+  import Dayan from '../../../components/SobreDayanAssinatura.vue'
+  import FormasPagto from '../../../components/FooterPagto_2025.vue'
+  import Footer from '../../../components/Footer.vue'
 </script>
 
 <template>
 
-<component :is="'script'" defer src="https://trk.vita-science.com/track.js"></component>
-  
-
+<ScriptRedtrackVSL/>  
 
 <header class="py-20 flex items-center justify-center px-5 md:px-0 min-h-screen bg-gradient-to-b from-blue-600 to-blue-400 bg-[url(/bgArtiF06VSL.webp)] bg-cover">
     <div class="container mx-auto max-w-5xl text-center">
@@ -179,131 +181,19 @@
 </section>
 
 
-<section id="garantia" class="pt-5 pb-30 bg-gray-100 px-[20px] ocultar">
-  <div class="container mx-auto px-0 max-w-4xl flex flex-col gap-[20px] flex-wrap items-center justify-center text-center">
-    
-    <img src="/seloGarantiaGlicoF06.webp" alt="" class="w-[230px] mt-[-120px]">
+<Garantia bg="bg-gray-100"/>
 
-    <p class="text-xl md:text-2xl">Foram décadas de pesquisa e testes para chegar na melhor combinação de componentes do <b>Artivita.</b></p>
+<Dayan/>
 
-    <p class="text-xl md:text-2xl">É por isso que confiamos que você irá amar os benefícios:</p>
+<FormasPagto bg="bg-gray-100"/>
 
-    <ul class="font-bold text-left list-none text-xl flex flex-col gap-3">
-      <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
-          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
-        </svg>
-
-        <span class="w-[35%] flex-grow">Eliminar a dor sem remédios;</span>
-      </li>
-
-      <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
-          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
-        </svg>
-
-        <span class="w-[35%] flex-grow">Recuperar a força das articulações;</span>
-      </li>
-
-      <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
-          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
-        </svg>
-
-        <span class="w-[35%] flex-grow">Irrigar e regenerar a cartilagem danificada;</span>
-      </li>
-
-      <li class="flex items-center justify-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[26px] md:size-7 inline-block text-[#03C032]">
-          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
-        </svg>
-
-        <span class="w-[35%] flex-grow">Impedir que as articulações fiquem fracas.</span>
-      </li>
-    </ul>
-
-    <p class="text-xl md:text-2xl">Mas, se você se arrepender por qualquer motivo que seja dentro de sete dias da sua compra, <b>devolveremos todo o seu investimento.</b></p>
-
-    <p class="text-xl md:text-2xl">Basta enviar uma mensagem para: <span class="text-pink-600">(11) 4003-7811.</span></p>
-
-  </div>
-</section>
-
-<section id="dayan" class="py-30 px-[20px] ocultar">
-  <div class="container mx-auto px-0 max-w-4xl flex flex-col md:flex-row gap-[20px] items-center justify-center text-center md:text-left">
-    <img src="/drDayanSiebra_Sobre.webp" alt="" class="md:w-[275px]">
-
-    <div>
-      <p class="text-lg md:text-xl mb-4">Formado pela Universidade de Pernambuco, possui mais de <b>25 anos</b> de prática na área da saúde.</p>
-
-      <p class="text-lg md:text-xl mb-4">É o criador do maior canal de medicina na língua portuguesa do <b>mundo</b>, com mais de 7 milhões de inscritos.</p>
-
-      <p class="text-lg md:text-xl mb-4">Além disso, é precursor e um dos maiores especialistas em medicina integrativa e natural no Brasil, <b>e já ajudou mais de 35 mil pessoas a viverem com mais saúde, sem esquecimentos</b></p>
-    </div>
-  </div>
-</section>
-
-<section class="bg-gray-50 py-14 px-[20px] ocultar">
-    <div class="container mx-auto max-w-6xl flex flex-col md:flex-row justify-between gap-10 md:gap-20 text-center md:text-left">
-
-        <div class="formas-pagto md:w-[25%] flex-grow">
-            <h3 class="text-xl font-bold">Formas de Pagamento</h3>
-            
-            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
-            
-            <img src="/formas_pagto.svg" class="w-[100%]" alt="">
-        </div>
-
-        <div class="duvidas md:w-[25%] flex-grow">
-            <h3 class="text-xl font-bold">Dúvidas</h3>
-            
-            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
-            
-            <p>Fale conosco aqui:</p>
-
-            <a href="https://lp.vita-science.com/9x3t?" class="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-10 rounded-[5px] transition-colors duration-300 mt-2">
-                    
-                    <svg class="w-5 h-5" viewBox="0 0 448 512" fill="currentColor">
-                        <path
-                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
-                        </path>
-                    </svg>
-                    <span>Tire suas dúvidas</span>
-                </a>
-            
-        </div>
-        
-        <div class="formas-pagto md:w-[25%] flex-grow">
-            <h3 class="text-xl font-bold">Site Seguro</h3>
-            
-            <hr class="w-[120px] mt-3 mb-6 mx-auto md:mx-0">
-            
-            <div class="flex flex-row flex-wrap justify-between gap-2">
-              <img src="/Reclame-aqui.jpg" class="w-[35%] flex-grow" alt="">
-              <img src="/Google.jpg" class="w-[35%] flex-grow" alt="">
-              <img src="/Site-seguro.jpg" class="w-[35%] flex-grow" alt="">
-              <img src="/Compra-segura.jpg" class="w-[35%] flex-grow" alt="">
-            </div>
-        </div>
-
-    </div>
-</section>
+<Footer bg="bg-gray-100"/>
 
 
-<footer class="bg-white py-20 flex items-center justify-center px-[20px]">
-    <div class="container mx-auto max-w-6xl text-center">
-        <img src="/vita-logo-dark.svg" alt="" class="mx-auto w-[150px] mb-5">
-        
-        <p class="text-gray-700 mb-6 text-sm">Caro consumidor e usuário: As informações dispostas neste site e em qualquer site da empresa - Vitascience Ltda, inscrita no CNPJ 32.985.885/0001-11, são publicadas exclusivamente para fins informativos e não podem ser consideradas como aconselhamento profissional. Logo, as informações aqui contidas, não substituem uma consulta com um profissional. O conteúdo aqui disposto possui caráter informativo e esta aberto ao público.</p>
 
-        <div class="flex justify-center items-center gap-20">
-            <a href="https://lp.vita-science.com/politica-de-privacidade/" class="text-gray-500 hover:text-gray-600" target="_self"><small>Política de privacidade</small></a>
-            <a href="https://lp.vita-science.com/termos-de-uso/" class="text-gray-500 hover:text-gray-600" target="_self"><small>Termos de Uso</small></a>
-        </div>
-    </div>
 
-</footer>
 
+<!-- <LiberaVSL/> -->
 
 <component :is="'script'">
 
@@ -347,17 +237,17 @@ let userViewPitch = getCookie("viewPitch");
         }
   }
   
-// AQUI VOCÊ DEFINE O TEMPO EM MINUTOS E SEGUNDOS 
-// (nao precisa converter, todos os calculas sao feitos pela da função) 
+/* AQUI VOCÊ DEFINE O TEMPO EM MINUTOS E SEGUNDOS */
+/* (nao precisa converter, todos os calculas sao feitos pela da função) */
 
-    var tmin = 26;  // minutos
-    var tseg = 29;  // segundos
+    var tmin = 26;  /* minutos */
+    var tseg = 29;  /* segundos */
     
-//********************************************
+/* ****************************************** */
 
     var tpitch = (tmin * 60000) + (tseg * 1000);
     setTimeout('show()', tpitch);
-    console.log('pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
+    console.log('Pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
     
     function show(){
         var list = document.getElementsByClassName('ocultar');
@@ -370,6 +260,8 @@ let userViewPitch = getCookie("viewPitch");
     }
   
 </component>
+
+
 
 <ScriptsFooter/>
 
